@@ -1,0 +1,51 @@
+fr - fraction. fr is calculated based on the remaining space when combined with other length values. Calculation of fraction is like this: grid-template-columns: 3rem 25% 1fr 2fr
+1fr = ((width of grid) - 3rem - (25% of width of the grid) ) / (1fr+2fr) 
+
+-----------------------------------------------
+
+`Gaps`:
+
+[grid-row-gap, grid-column-gap] }=>  grid-gap
+Gaps are only created between rows or columns, not edges of them. 
+
+-----------------------------------------------
+`Grid functions`:
+
+`minmax(minimum_value, maximum_value)` : tracks sizes can be defined to have a minimum and/or maximum size with it. These arguments can also be `auto`, which allows the track to grow/stretch based on the size of the content.
+
+`repeat(how_much, what)`: Arguments: the first represents the number of times the defined tracks should repeat, and the second is the track definition. We can use it inside any statement: `grid-template-columns: 30px repeat(3, 1fr) 30px`. 
+
+-----------------------------------------------
+`Positioning Items by Grid Line Numbers`
+
+[grid-row-start / grid-column-start / grid-row-end / grid-column-end] } => grid-area
+
+-----------------------------------------------
+-----------------------------------------------
+-----------------------------------------------
+[CSS-TRICKS]
+
+
+-----------------------------------------------
+`Properties for the Parent (Grid Container)`
+1. DISPLAY:
+grid – generates a block-level grid
+inline-grid – generates an inline-level grid
+
+
+
+-----------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+[Free Code Camp]
+Grid is a blueprint for making websites.
+
